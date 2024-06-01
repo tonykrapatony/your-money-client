@@ -1,0 +1,26 @@
+.input_group {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    border: 3px solid #FDE4A1;
+    border-radius: 5px;
+    outline: none;
+    color: #505050;
+    cursor: pointer;
+    &::-webkit-file-upload-button {
+      height: 100%;
+      width: 30px;
+      border: none;
+      font-size: 0;
+      background: #FDE4A1 url('../../../../public/assets/images/svg/upload_icon.svg') center no-repeat;
+      cursor: pointer;
+    }
+  }
+}

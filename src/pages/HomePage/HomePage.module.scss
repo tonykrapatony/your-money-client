@@ -1,0 +1,193 @@
+.homepage {
+  .main_banner {
+    position: relative;
+    padding-top: 50px;
+    height: calc(100dvh - 70px);
+    overflow: hidden;
+    .main_banner_bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background-color: rgb(253, 228, 161, .7);
+      // display: flex;
+      // align-items: stretch;
+      &::before {
+        content: '';
+        position: absolute;
+        left: -110%;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 157, 156, .7);
+        transform: skew(-45deg);
+        transition: transform .1s ease-in;
+        @media (max-width: 1024px) {
+          left: -190%;
+        }
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        right: -110%;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(233, 244, 188, .7);
+        transform: skew(-45deg);
+        transition: transform .1s ease-in;
+        @media (max-width: 1024px) {
+          right: -190%;
+        }
+      }
+    }
+    .main_banner_content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // gap: 50px;
+      padding: 0 20px;
+      @media (max-width: 1024px) {
+        flex-direction: column-reverse;
+        gap: 20px;
+      }
+      .main_banner_text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        max-width: 600px;
+        @media (max-width: 1024px) {
+          align-items: center;
+        }
+        h1 {
+          margin-bottom: 10px;
+          font-size: 62px;
+          font-weight: 900;
+        }
+        p {
+          max-width: 500px;
+          font-size: 20px;
+          font-weight: 500;
+          @media (max-width: 1024px) {
+            text-align: center;
+          }
+        }
+      }
+      .main_banner_img {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+  }
+  .page_block {
+    padding: 50px 16px;
+    .title {
+      font-size: 50px;
+      font-weight: 800;
+      text-align: center;
+    }
+    .step_list {
+      // display: flex;
+      // align-items: stretch;
+      // justify-content: center;
+      display: grid; 
+      grid-template-columns: repeat(4, 200px);
+      grid-template-rows: 120px;
+      justify-content: center;
+      gap: 50px;
+      padding-top: 30px;
+      @media (max-width: 1024px) {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 120px 120px;
+        gap: 50px;
+      }
+      @media (max-width: 768px) {
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(4, 120px);
+        gap: 50px;
+      }
+      .step_item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        // width: 200px;
+        // height: 120px;
+        padding: 0 20px;
+        background-color: rgba(233, 244, 188, 0.7);
+        .step_title {
+          font-size: 30px;
+          font-weight: 500;
+        }
+        .step_description {
+          font-size: 18px;
+        }
+        ::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 100%;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 60px 0 60px 20px;
+          border-color: transparent transparent transparent rgba(233, 244, 188, 0.9);
+          @media (max-width: 768px) {
+            top: 100%;
+            left: 0;
+            border-width: 20px 150px 0 150px;
+            border-color: rgba(233, 244, 188, 0.9) transparent transparent transparent;
+          }
+        }
+      }
+    }
+    .features_list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-top: 30px;
+      .features_item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .features_item_img {
+          width: 70px;
+          height: 70px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .features_item_text {
+          flex: 1 1 0;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          max-width: 700px;
+          .features_title {
+            font-size: 32px;
+            font-weight: 600;
+          }
+          .features_description {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

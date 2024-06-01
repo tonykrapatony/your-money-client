@@ -1,0 +1,55 @@
+.btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: fit-content;
+  min-width: 100px;
+  padding: 5px 15px;
+  border: 1px solid #FDE4A1;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #505050;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #FDE4A1;
+    transform: skew(-40deg) translateX(-50%);
+    transition: transform .1s ease-in;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #FDE4A1;
+    transform: skew(-40deg) translateX(50%);
+    transition: transform .1s ease-in;
+  }
+  &:hover {
+    &::before {
+      transform: skew(-40deg) translateX(-90%);
+    }
+    &::after {
+      transform: skew(-40deg) translateX(90%);
+    }
+  }
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}

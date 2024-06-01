@@ -1,0 +1,19 @@
+.settings {
+  padding: 20px 0;
+  .title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .profile_info {
+    display: grid;
+    grid-template-columns: 150px minmax(300px, auto) minmax(200px, auto);
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+    @media (max-width: 768px) {
+      grid-template-columns: minmax(280px, 1fr);
+      align-items: center;
+      gap: 30px;
+    }
+  }
+}

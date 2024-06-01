@@ -1,0 +1,43 @@
+.tab_content_table {
+  .tab_content_table_head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 5px;
+    background-color: rgba(233, 244, 188, 0.7);
+    .date, .title, .value, .actions {
+      font-size: 20px;
+      font-weight: 600;
+      color: #505050;
+    }
+  }
+  .date {
+    width: 25%;
+  }
+  .title {
+    width: 35%;
+  }
+  .value {
+    width: 30%;
+  }
+  .actions {
+    width: 10%;
+  }
+  // .tab_content_table_body {
+
+  // }
+}
+.tab_content_table_body {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.total {
+  padding: 5px;
+  border-top: 1px solid #505050;
+  background-color: rgba(233, 244, 188, 0.7);
+
+  font-size: 22px;
+  font-weight: 600;
+}

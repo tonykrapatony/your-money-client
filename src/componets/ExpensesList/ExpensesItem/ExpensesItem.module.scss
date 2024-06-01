@@ -1,0 +1,37 @@
+.date {
+  width: 25%;
+}
+.title {
+  width: 25%;
+}
+.value {
+  width: 20%;
+}
+.category {
+  width: 20%;
+}
+.actions {
+  width: 10%;
+}
+.tab_content_table_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 7px 5px;
+  &:nth-child(even) {
+    background-color: rgba(255, 158, 156, 0.2);
+  }
+  .date, .title, .value, .category, .actions {
+    font-size: 18px;
+    color: #505050;
+  }
+  .actions {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+  }
+}

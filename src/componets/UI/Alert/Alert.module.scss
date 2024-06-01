@@ -1,0 +1,20 @@
+.alert {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: #505050;
+  @media (max-width: 768px) {
+    max-width: 300px;
+  }
+  &.error {
+    background-color: #FF9D9C;
+  }
+  &.success {
+    background-color: #E9F4BC;
+  }
+}

@@ -1,0 +1,35 @@
+.date {
+  width: 25%;
+}
+.title {
+  width: 35%;
+}
+.value {
+  width: 30%;
+}
+.actions {
+  width: 10%;
+}
+.tab_content_table_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 7px 5px;
+  &:nth-child(even) {
+    background-color: rgba(233, 244, 188, 0.2);
+  }
+  .date, .title, .value, .actions {
+    font-size: 18px;
+    color: #505050;
+  }
+  .actions {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+  }
+}

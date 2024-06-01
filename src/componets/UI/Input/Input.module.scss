@@ -1,0 +1,49 @@
+.input_group {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 25px;
+  input {
+    width: 100%;
+    height: 45px;
+    padding: 5px 10px;
+    border: 1px solid #505050;
+    border-radius: 5px;
+    outline: none;
+    color: #505050;
+    &::-webkit-calendar-picker-indicator {
+      background: url('../../../../public/assets/images/svg/calendar_icon.svg') no-repeat;
+    }
+    &.input_error {
+      border-color: #FF9D9C;
+      color: #FF9D9C;
+      &::placeholder {
+        color: #FF9D9C;
+      }
+    }
+  }
+  .show {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+  .reset {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+  .error_msg {
+    margin-top: 5px;
+    color: #FF9D9C;
+    font-size: 14px;
+  }
+}

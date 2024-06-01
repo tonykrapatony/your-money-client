@@ -1,0 +1,29 @@
+.profile_page {
+  position: relative;
+  min-height: calc(100dvh - 221px);
+  .profile_page_tabs {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 20px;
+    .profile_page_tab {
+      .tab_content_row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px;
+        .tab_content_col {
+          flex: 1 1 0;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .title {
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.transactions {
+  padding: 20px 0;
+  .title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .transactions_row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: 50px;
+    }
+    .transactions_col {
+      flex: 1 1 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+    }
+  }
+}
