@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/your-money-client/static/css/main.dadc3006.css",
+    "main.js": "/your-money-client/static/js/main.16aa0be0.js",
+    "static/media/calendar_icon.svg": "/your-money-client/static/media/calendar_icon.82e22a122520c462b194.svg",
+    "index.html": "/your-money-client/index.html",
+    "static/media/upload_icon.svg": "/your-money-client/static/media/upload_icon.73963915d8544c34545e.svg",
+    "main.dadc3006.css.map": "/your-money-client/static/css/main.dadc3006.css.map",
+    "main.16aa0be0.js.map": "/your-money-client/static/js/main.16aa0be0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dadc3006.css",
+    "static/js/main.16aa0be0.js"
+  ]
+}
